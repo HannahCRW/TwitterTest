@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html href="">
 	<head>
+		<link rel="stylesheet" href="style.css">
 		<title>Twitter</title>
 		<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
 	</head>
 	<body>
-		<div>
+		<div class="page-background">
 		<!--here we should put our background as 100% - i.e. not a fixed width so it doesn't matter whether the page is maximised or not-->
-			<div>
-			<!--In this we want the header bar-->
+			<div class="topbar js-topbar">
+				<div class="global-nav" data-section-term="top_nav">
+					<div class="global-nav-inner">
+						<div class="container">
+							<h1 class="icon"><img src="./images/twitterbird.ico"></h1>
+							<div role="navigation" style="display: inline-block;">
+								<ul class="nav js-global-actions" id="global-actions">
+									<li id="global-nav-home" class="home active new" data-global-action="home">...</li>
+									<li class="people notifications" data-global-action="connect">...</li>
+									<li class="topics" data-global-action="discover">...</li>
+									<li class="profile" data-global-action="profile">...</li>
+								</ul>
+							</div>
+							<div class="pull-right" style="display: inline-block;">...</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div id="page-container">
 			<!--in this bit we need the central part - where all the tweets and sidebar go-->
-			<div>
+			<div id="sidebar">
 				<!--so this will be the sidebar-->
 			</div>
-			<div>
+			<div id="tweetfeed">
 				<!--and this will be the tweets, or something-->
 			</div>
 		</div>
