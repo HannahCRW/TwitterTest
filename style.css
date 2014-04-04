@@ -2,11 +2,8 @@
 
 body {
 	background: #fff;
-	background-color: #C0DEED;
 	color: #292f33;
-	overflow-y: scroll;
 	height: 100%;
-	width: 100%;
 	margin: 0;
 	padding-top: 10px;
 }
@@ -20,13 +17,50 @@ body {
 }
 
 
-.page-container {
-	background-color: #ffffff;
+#page-container {
+	background-color: red;
 	font-size: 14px;
 	line-height: 18px;
 	border-bottom: 1px solid black;
+	width: 890px;
+	margin: 0 auto;
+	padding: 0;
 }
 
-.container {
+#sidebar {
+	background: PaleGoldenRod;
+	width: 290px;
+	float: left;
+	padding: 0;
+}
 
+#profile {
+	background: green;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#recommendations {
+	background: HotPink;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#trends {
+	background: blue;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#copyright {
+	background: orange;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#twitterfeed {
+	background: yellow;
+	width: 590px;
+	float: right;
+	padding: 0;
 }
