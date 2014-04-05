@@ -92,10 +92,18 @@ body {
 }
 
 #twitterfeed {
-	background: yellow;
+	background: white;
 	width: 590px;
 	float: right;
 	padding: 0;
+	color: gray;
+	border-radius: 10px;
+}
+
+#twitterfeed p {
+font-size: 20px;
+margin-bottom: 10px;
+margin-left: 10px;
 }
 
 .tweets {
