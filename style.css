@@ -101,12 +101,32 @@ body {
 }
 
 #twitterfeed p {
-font-size: 20px;
-margin-bottom: 10px;
-margin-left: 10px;
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
-.tweets {
-	background: beige;
+.content {
+	background: white;
 	border-top: 1px solid gray;
+}
+
+.header {
+	font-size: 14px;
+}
+
+.header img {
+	border-radius: 10px;
+	margin: 10px 10px 10px 10px;
+
+}
+
+.header h4 {
+	display: inline;
+	margin: 0px 0px 0px 0px;
+	width: 180px;
+}
+
+.tweet-text {
+
 }

@@ -1,0 +1,3 @@
+CSS/HTML Questions
+- Twitter uses ol/li to display tweets?
+- Twitter displays profile picture in left margin?
