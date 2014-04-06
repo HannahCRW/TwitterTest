@@ -128,10 +128,10 @@ body {
 	border-radius: 5px;  /*changed this to 5 from 10 because it was toooo rounded compared to twitter page */
 }
 
-#twitterfeed p {
-	font-size: 24px;
+.title {
 	margin-bottom: 10px;
 	margin-left: 10px;
+	font-size: 20px;
 }
 
 .content {
@@ -139,9 +139,11 @@ body {
 	border-top: 1px solid gray;
 }
 
-.content img {	
+.avatar img {	
+	float: left;
 	border-radius: 10px;
 	margin: 10px 10px 10px 10px;
+
 }
 
 .header {
@@ -158,5 +160,6 @@ body {
 }
 
 .text {
- 
+	float: left;
+	margin: 0px 0px 0px 6px;
 }
