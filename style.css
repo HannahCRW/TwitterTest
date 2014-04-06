@@ -85,7 +85,17 @@ body {
 		border-top-left-radius: 5px;
 		background-color: #000000;
 		color: red;
+		height: 135px;
 	}
+
+		#profile-picture {
+			text-align: center;
+			margin-left: 38%;
+			width: 60px;
+			height: 60px;
+			border: solid 5px white;
+			border-radius: 3px;
+		}
 
 	#stats {
 		background: white;
