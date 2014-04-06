@@ -18,6 +18,8 @@ body {
 	background: white;
 	margin: 0px;
 	padding: 10px;	
+	-webkit-box-shadow: 0 0 5px #CFCFCF;
+	-moz-box-shadow: 0 0 5px #CFCFCF;
 }
 
 .top-bar ul {
@@ -61,34 +63,44 @@ body {
 }
 
 #sidebar {
-	background: PaleGoldenRod;
 	width: 290px;
 	float: left;
-	padding: 0;
+	border-radius: 5px;
+}
+
+#sidebar div {
+	background: #fff;
+	margin-bottom: 10px;
+	border-color: #CFCFCF;
 }
 
 #profile {
-	background: green;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	border-radius: 5px;
+}
+
+#avatar {
+	border-radius: 5px;
+}
+
+#stats {
+	-webkit-box-shadow:inset 0 0 1px #CFCFCF;
+	-moz-box-shadow:inset 0 0 1px #CFCFCF;
+}
+
+#new-tweet {
+	border-radius: 5px;
 }
 
 #recommendations {
-	background: HotPink;
-	margin-bottom: 5px;
-	margin-top: 5px;
+
 }
 
 #trends {
-	background: blue;
-	margin-bottom: 5px;
-	margin-top: 5px;
+
 }
 
 #copyright {
-	background: orange;
-	margin-bottom: 5px;
-	margin-top: 5px;
+
 }
 
 #twitterfeed {
@@ -96,8 +108,8 @@ body {
 	width: 590px;
 	float: right;
 	padding: 0;
-	color: gray;
-	border-radius: 10px;
+	border-color: gray;
+	border-radius: 5px;  /*changed this to 5 from 10 because it was toooo rounded compared to twitter page */
 }
 
 #twitterfeed p {
