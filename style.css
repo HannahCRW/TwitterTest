@@ -103,6 +103,8 @@ body {
 		border-bottom-left-radius: 5px;
 		text-align: center;
 		background: #e5f2f7;
+		outline: 0;
+		border: 1px solid #c0deed;
 	}
 
 	#new-tweet input {
