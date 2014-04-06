@@ -6,7 +6,7 @@ body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	font-family: "Helvetica", Arial, sans-serif;  
+	font-family: 'Open Sans', sans-serif; /* This is an alternative to Twitter's font, Gotham */
 }
 
 
@@ -109,10 +109,12 @@ body {
 
 	#new-tweet input {
 		background-color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13px;
 		width: 245px;
 		border-radius: 3px;
 		padding: 8px;
-		color: #9dabb6;
+		color: #919ea9;
 		margin: 10px;
 		outline: 0;
 		border: 1px solid #c0deed;
