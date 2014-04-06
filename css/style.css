@@ -1,0 +1,132 @@
+@font-face {
+  font-family:'rosettaicons';
+  src: url('https://abs.twimg.com/a/1396545424/font/rosetta-icons-Regular.eot');
+  src: url('https://abs.twimg.com/a/1396545424/font/rosetta-icons-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://abs.twimg.com/a/1396545424/font/rosetta-icons-Regular.woff') format('woff'), /* Modern Browsers */ url('https://abs.twimg.com/a/1396545424/font/rosetta-icons-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  /* IE9 Compat Modes */
+  /* Safari, Android, iOS */
+}
+
+.container:before,
+.container:after {
+  content: " "; /* Older browser do not support empty content */
+  display: table;
+}
+.container:after{
+  clear: both;
+}
+.container {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: url("../images/background.png") no-repeat;
+  background-color: #c0deed;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica", Arial, sans-serif;  
+}
+
+.top-bar {
+  /* position: fixed; */
+  width: 100%;
+  height: 25px;
+  text-align: left;
+  background: white;
+  margin: 0px;
+  padding: 10px;  
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar li {
+  display: inline;
+  background-color: white;
+  color: gray;
+  font-size: 13px;
+  font-weight: ;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+#menu {
+  float: left;
+  width: 40%;
+}
+
+#logo {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+
+#search {
+  float: right;
+  width: 40%;
+}
+#page-container {
+  background-color: red;
+  font-size: 14px;
+  line-height: 18px;
+  width: 890px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+#sidebar {
+  background: PaleGoldenRod;
+  width: 290px;
+  float: left;
+  padding: 0;
+}
+
+#profile {
+  background: green;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#recommendations {
+  background: HotPink;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#trends {
+  background: blue;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#copyright {
+  background: orange;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#twitterfeed {
+  background: white;
+  width: 590px;
+  float: right;
+  padding: 0;
+  color: gray;
+  border-radius: 10px;
+}
+
+#twitterfeed p {
+font-size: 20px;
+margin-bottom: 10px;
+margin-left: 10px;
+}
+
+.tweets {
+  background: beige;
+  border-top: 1px solid gray;
+}
