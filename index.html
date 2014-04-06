@@ -1,69 +1,102 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Twitter</title>
-		<link rel="stylesheet" href="css/style.css" type="text/css"/>
-		<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
-	</head>
-	<body>
-		<div class="top-bar">
-			<div id="menu">
-			<ul>
-				<li><img src="./images/home.png"> Home</li>
-				<li><img src="./images/notif.png"> Notifications</li>
-				<li><img src="./images/discover.png"> Discover</li>
-				<li><img src="./images/me.png"> Me</li>
-			</ul>
-			</div>
-			<div id="logo">
-			<img src="./images/twitterbird.ico">
-			</div>
-			<div id="search">
-			Search
-			</div>	
-		</div>
+  <head>
+    <title>Twitter</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>   
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700' rel='stylesheet' type='text/css'>    
+    <script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div id="menu">
+      <ul>
+        <li><img src="./images/home.png"> Home</li>
+        <li><img src="./images/notif.png"> Notifications</li>
+        <li><img src="./images/discover.png"> Discover</li>
+        <li><img src="./images/me.png"> Me</li>
+      </ul>
+      </div>
+      <div id="logo">
+      <img src="./images/twitter-logo-large.png" width="23" height="18">
+      </div>
+      <div id="search">
+      Search
+      </div>  
+    </div>
 
-		<div id="page-container">
-			<!--in this bit we need the central part - where all the tweets and sidebar go-->
-			<div id="sidebar">
-			sidebar
-				<div id="profile">
-					profile
-				</div>
-				<div id="recommendations">
-					recs
-				</div>
-				<div id="trends">
-					trends
-				</div>
-				<div id="copyright">
-					copyright
-				</div>
-				<!--so this will be the sidebar-->
-			</div>
-			<div id="twitterfeed">
-			   <p>Tweets</p>
-			   <div class="tweets">
-			   tweets
-			   </div>
-			   <div class="tweets">
-			   tweets
-			   </div>
-			   <div class="tweets">
-			   tweets
-			   </div>
-			   <div class="tweets">
-			   tweets
-			   </div>
-			   <div class="tweets">
-			   tweets
-			   </div>
-				<!--and this will be the tweets, or something-->
-			</div>
-		</div>
-	</body>
+    <div id="page-container">
+      <div id="sidebar">
+        <div id="profile">
+          <div id="avatar">
+            <div id="profile-picture">
+              <img src="./images/grumpycat.jpg" width="60" height="60">
+            </div>
+            <div id="name">
+              Name
+            </div>
+            <div id="username">
+              @username
+            </div>
+          </div>
+          <div id="stats">
+            <div id="tweets-count">
+              TWEETS<br>
+              123
+            </div>
+            <div id="following-count">
+              FOLLOWING<br>
+              123
+            </div>
+            <div id="followers-count">
+              FOLLOWERS<br>
+              123
+            </div>
+          </div><br><br><br>
+          <div id="new-tweet" class="unit">
+            <form id="composeTweet" onsubmit="return tweet(this)">
+              <input name="tweet" type="text" value="Compose new Tweet..."
+                onfocus="if(this.value == 'Compose new Tweet...') { this.value = ''; }"
+                onblur="if(this.value == '') { this.value = 'Compose new Tweet...'; }"/>
+                <!--This ridiculously chunky bit of code means the "Compose new Tweet" text disappears when we click in the box-->
+            </form>
+          </div>
+        </div>
+        <div id="recommendations">
+          <div id="to-follow">
+            people to follow
+          </div>
+          <div id="find-friends">
+            import contacts
+          </div>
+        </div>
+        <div id="trends">
+          trends
+        </div>
+        <div id="copyright">
+          &copy 2014 Twitter  About  Help  Terms  Privacy  Cookies  Ads  info  Brand  Blog  Status  Apps  Jobs  Advertise  Businesses  Media  Developers
+          <!--obviously none of these are links yet, but we'll get there-->
+        </div>
+      </div>
+      <div id="twitterfeed">
+        <div class="title"> 
+          <p>Tweets</p>
+        </div>
+         <!-- <div class="original"> js/jquery required to hover -->
+         <div class="content">
+          <div class="avatar">
+            <img src="./images/default_profile_blue.png">
+          </div>
+          <div class="header"><strong>Name </strong> 
+            <div class="handle"> @Name
+            </div> 
+            <div class="time"><small> 2d </small>
+            </div>
+          </div>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+         </div>
+      </div>
+    </div>
+  </body>
 </html>
-
-
-<!--within top bar is all the buttons (Home, Profile etc), the twitter icon and the search submit box thing -->
-

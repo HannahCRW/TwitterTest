@@ -1,0 +1,8 @@
+CSS/HTML Questions
+- Twitter uses ol/li to display tweets?
+- Twitter displays profile picture in left margin?
+- How to display account name, twitter handle, & time on one line but make them different classes?
+		^^^ I think this should be easily done by just doing "display: inline"...no?
+		^^^ Another way would be: instead of using a <div> you could use a <span> tag. It works exactly like divs (so you could give it a class or id), but it always has the inline property! 
+- Need to change font color for twitter feed but nowhere else
+		^^^ this should be easy enough, just with CSS?  just "color: #whatever" in the class specification.
