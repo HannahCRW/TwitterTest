@@ -71,36 +71,52 @@ body {
 #sidebar div {
 	background: #fff;
 	margin-bottom: 10px;
-	border-color: #CFCFCF;
+	border-style: solid 2px;
+	border-color: #e1e8ed;
 }
 
 #profile {
 	border-radius: 5px;
 }
 
-#avatar {
-	border-radius: 5px;
-}
+	#avatar {
+		border-radius: 5px;
+		background-color: #000000;
+		color: red;
+	}
 
-#stats {
-	-webkit-box-shadow:inset 0 0 1px #CFCFCF;
-	-moz-box-shadow:inset 0 0 1px #CFCFCF;
-}
+	#stats {
+		-webkit-box-shadow:inset 0 0 2px #e1e8ed;
+		-moz-box-shadow:inset 0 0 2px #e1e8ed;
+	}
 
-#new-tweet {
-	border-radius: 5px;
-}
+	#stats div {
+		display: inline;
+		text-align: center;
+	}
+	
+	#new-tweet {
+		border-radius: 5px;
+	}
 
 #recommendations {
-
+	border-radius: 5px;
 }
 
-#trends {
+	#to-follow{
+		border-radius: 5px;
+	}
+	
+	#find-friends {
+		border-radius: 5px;
+	}
 
+#trends {
+	border-radius: 5px;
 }
 
 #copyright {
-
+	border-radius: 5px;
 }
 
 #twitterfeed {
