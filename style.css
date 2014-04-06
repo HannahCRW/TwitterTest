@@ -111,22 +111,20 @@ body {
 	border-top: 1px solid gray;
 }
 
-.header {
-	font-size: 14px;
-}
-
-.header img {
+.content img {	
 	border-radius: 10px;
 	margin: 10px 10px 10px 10px;
-
 }
 
-.header h4 {
-	display: inline;
-	margin: 0px 0px 0px 0px;
-	width: 180px;
+.header {
+	float: right;
+	margin: 10px 379px 0px 0px;
 }
 
-.tweet-text {
+.handle {
+	display: inline-block;
+}
 
+.time {
+	display: inline-block;
 }

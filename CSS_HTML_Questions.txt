@@ -1,3 +1,5 @@
 CSS/HTML Questions
 - Twitter uses ol/li to display tweets?
 - Twitter displays profile picture in left margin?
+- How to display account name, twitter handle, & time on one line but make them different classes?
+- Need to change font color for twitter feed but nowhere else
