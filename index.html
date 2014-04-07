@@ -3,23 +3,28 @@
   <head>
     <title>Twitter</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>   
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700' rel='stylesheet' type='text/css'>    
-    <script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/> 
   </head>
   <body>
-    <div class="top-bar">
-      <div id="menu">
-      <ul>
-        <li><img src="./images/home.png"> Home</li>
-        <li><img src="./images/notif.png"> Notifications</li>
-        <li><img src="./images/discover.png"> Discover</li>
-        <li><img src="./images/me.png"> Me</li>
-      </ul>
-      </div>
-      <div id="logo">
-      <img src="./images/twitter-logo-large.png" width="23" height="18">
-      </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#"><img />Home</a></li>
+          <li><a href="#"><img />Notifications</a></li>
+          <li><a href="#"><img />Discover</a></li>
+          <li><a href="#"><img />Me</a></li>
+        </ul>
+      </nav>
+      <img alt="logo" title="logo"/>
+      <input type="search"/>
+      <a href="#" title="Direct messages">
+        <img alt="Direct messages"/>
+      </a>
+      <a href="#" title="Settings and help">
+        <img alt="Settings-and-help"/>
+      </a>
+      
       <div id="search">
       Search
       </div>  
@@ -87,7 +92,7 @@
           <div class="avatar">
             <img src="./images/default_profile_blue.png">
           </div>
-          <div class="header"><strong>Name </strong> 
+          <div class="user-info"><strong>Name </strong> 
             <div class="handle"> @Name
             </div> 
             <div class="time"><small> 2d </small>
