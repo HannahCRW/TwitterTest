@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   background: url("../images/background.png") no-repeat;
   background-color: #c0deed;
 }
@@ -31,10 +31,20 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 header {
-  text-align: center;
   background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
   zoom: 1;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 header:before,
@@ -49,6 +59,7 @@ header:after {
 
 header nav {
   float: left;
+  margin-left: 0%;
 }
 
 header ul {
@@ -62,9 +73,9 @@ header nav li {
 header nav li a {
   display: block;
   height: 45px;
-  padding: 0.5em;
-  border-bottom: 4px solid #ffffff;
+  padding: 0.6em 1em;
   zoom: 1;
+  transition: all 0.15s ease-in-out;
 }
 
 header nav li a:before,
@@ -72,18 +83,23 @@ header nav li a:after {
   content: " ";
   display: table;
 }
+
 header nav li a.active {
   border-bottom: 4px solid #66757F;
 }
+
 header nav li a:after {
   clear: both;
 }
+
 header nav li a:hover {
   border-bottom: 4px solid #66757F;
 }
+
 header nav li a:hover .nav-text {
   color: #66757F;
 }
+
 header nav li a:hover .nav-icon {
   color: #66757F;
 }
@@ -92,7 +108,7 @@ header nav li .nav-text {
   float: right;
   display: inline-block;
   margin-top: 8px;
-  margin-left: 0.5em;
+  margin-left: 0.25em;
   font-size: 13px;
   font-weight: 500;
   color: #66757F;
@@ -104,23 +120,171 @@ header nav li .nav-icon {
   height: 21px;
   border: none;
   margin-top: 2px;
-  background-color: #66757f;
 }
 
-
 header .bird {
-  float: left;
+  float: centre;
   display: inline-block;
 }
 
 header .user-tools {
   float: right;
+  margin-right: 5%;
 }
 
+header #search-form {
+  display: inline-block;
+  position: relative;
+}
 
+header #search-form .search-icon {
+  font-family: 'rosettaicons';
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 7px;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
 
+header input[type=search] {
+  background-color: #66757f;
+  color: #ffffff;
+  font-weight: 500;
+  opacity: 0.6;
+  border: none;
+  padding: 0.75em 2.5em 0.75em 0.75em;
+  width: 200px;
+  top: 4px;
+  position: relative;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
 
+header input[type=search] ::-webkit-input-placeholder {
+  color: #ffffff;
+}
 
+#settings-menu {
+  display: none;
+}
+
+.user-tools .icon{
+  display: inline-block;
+  position: relative;
+  top: 9px;
+}
+
+.user-tools {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+  float: left;
+}
+
+.user-tools button {
+  background-color: rgba(31, 152, 199, 0.8);
+  border: none;
+  position: relative;
+  top: 8px;
+  width: 40px;
+  height: 32px;
+  margin: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.user-tools button .icon {
+  margin: 0;
+  margin-left: 4px;
+  position: static;
+  color: #ffffff;
+}
+
+.user-tools button:hover {
+  opacity: 1;
+}
+
+.user-tools a:hover .icon {
+  color: #66757f;
+}
+
+.nav-icon {
+  width: 23px;
+  height: 23px;
+  margin-top: 2px;
+  color: #66757f;
+  border: none;
+  float: left;
+  font-family: "rosettaicons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.icon {
+  width: 21px;
+  height: 21px;
+  font-family: "rosettaicons";
+  font-size: 21px;
+  line-height: 1;
+  color: #929ca3;
+  margin-right: 25px;
+}
+
+.icon-bird {
+  font-family: "rosettaicons";
+  font-size: 23px;
+  color: #55acee;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -23px;
+}
+
+.home-icon:before {
+  content: "\f053";
+}
+
+.notify-icon:before {
+  content: "\f055";
+}
+
+.discover-icon:before {
+  content: "\f052";
+}
+
+.me-icon:before {
+  content: "\f056";
+}
+
+.icon-bird:before {
+  content: "\f179";
+}
+
+.messages-icon:before {
+  content: "\f054";
+}
+
+.settings-icon:before {
+  content: "\f059";
+}
+
+.tweet-icon:before {
+  content: "\f029";
+}
 
 #menu {
   float: left;
@@ -133,9 +297,6 @@ header .user-tools {
   width: 20%;
 }
 
-#search {
-  float: right;
-  width: 40%;
 }
 #page-container {
   background-color: red;

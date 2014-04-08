@@ -10,24 +10,26 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#" class="active"><img class="nav-icon"/><span class="nav-text">Home</span></a></li>
-          <li><a href="#"><img class="nav-icon"/><span class="nav-text">Notifications</span></a></li>
-          <li><a href="#"><img class="nav-icon" /><span class="nav-text">Discover</span></a></li>
-          <li><a href="#"><img class="nav-icon" /><span class="nav-text">Me</span></a></li>
+          <li><a href="#" class="active"><span class="nav-icon home-icon"></span><span class="nav-text">Home</span></a></li>
+          <li><a href="#"><span class="nav-icon notify-icon"></span><span class="nav-text">Notifications</span></a></li>
+          <li><a href="#"><span class="nav-icon discover-icon"></span><span class="nav-text">Discover</span></a></li>
+          <li><a href="#"><span class="nav-icon me-icon"></span><span class="nav-text">Me</span></a></li>
         </ul>
       </nav>
-      <img alt="logo" class="bird"/>
-      <span class"icon-bird"></span>
+      <span class="icon-bird"></span>
       <section class="user-tools">
-      <input type="search" placeholder="Search"/>
+      <form id="search-form">
+      <input id="search-box" type="search" placeholder="Search"/>
+      <span class="search-icon"></span>
+      </form>
       <a href="#" title="Direct messages">
-        <img alt="Direct messages"/>
+     <span class="icon messages-icon"></span>
       </a>
       <a href="#" title="Settings and help">
-        <img alt="Settings-and-help"/>
+       <span class="icon settings-icon"></span>
       </a>
       <a href="#" title="Compose new Tweet">
-        <img alt="Compose-new-Tweet"/>
+        <span class="icon tweet-icon"></span>
       </a>
       </section>
     </header>
